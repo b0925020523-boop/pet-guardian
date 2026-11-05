@@ -1,0 +1,484 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>聯絡我們｜寵物守護</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans TC", Arial, sans-serif;
+  background: #f5f6f2;
+  color: #17334a;
+}
+
+/* 左右主要區域 */
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+
+/* 左側聯絡資訊 */
+.contact-left {
+  padding: 65px 8% 50px 9%;
+  background: #f5f6f2;
+}
+
+.contact-left h1 {
+  font-size: 38px;
+  line-height: 1.7;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 45px;
+  color: #17334a;
+}
+
+/* 聯絡資訊區塊 */
+.contact-item {
+  border-top: 1px solid #d8ded5;
+  padding: 32px 0;
+}
+
+.contact-item:last-child {
+  border-bottom: 1px solid #d8ded5;
+}
+
+.number {
+  font-size: 14px;
+  color: #81917e;
+  letter-spacing: 1px;
+  margin-bottom: 22px;
+}
+
+.small-title {
+  font-size: 15px;
+  color: #63746e;
+}
+
+.main-info {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 25px;
+  color: #17334a;
+  text-decoration: none;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+.main-info:hover {
+  color: #668a73;
+}
+
+.description {
+  color: #87938d;
+  font-size: 14px;
+  line-height: 1.9;
+  margin-top: 12px;
+}
+
+/* 右側表單 */
+.contact-right {
+  background: #ffffff;
+  padding: 60px 8% 55px;
+}
+
+.english-title {
+  color: #819078;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 35px;
+}
+
+.contact-right h2 {
+  font-size: 30px;
+  color: #17334a;
+  margin-bottom: 15px;
+}
+
+.intro {
+  color: #78858c;
+  font-size: 15px;
+  line-height: 2;
+  margin-bottom: 40px;
+}
+
+.required {
+  color: #bd704e;
+}
+
+/* 表單欄位 */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px 24px;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-group.full {
+  grid-column: 1 / -1;
+}
+
+label {
+  display: block;
+  margin-bottom: 13px;
+  color: #17334a;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 18px 16px;
+  border: 1px solid #d5dcd3;
+  background: #fafbf8;
+  color: #29465b;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  border-radius: 0;
+}
+
+input,
+select {
+  height: 64px;
+}
+
+textarea {
+  height: 190px;
+  resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #819c80;
+  background: #ffffff;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #a0aaa6;
+}
+
+/* 個資同意 */
+.agreement {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 25px;
+  color: #77847f;
+  font-size: 13px;
+  line-height: 1.8;
+  font-weight: normal;
+}
+
+.agreement input {
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
+  flex-shrink: 0;
+  accent-color: #557b68;
+}
+
+/* 送出按鈕 */
+.submit-btn {
+  width: 100%;
+  height: 60px;
+  margin-top: 27px;
+  border: none;
+  background: #426f5d;
+  color: white;
+  font-size: 17px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #294f40;
+}
+
+/* 手機與平板版 */
+@media (max-width: 900px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-left {
+    padding: 45px 8%;
+  }
+
+  .contact-right {
+    padding: 45px 8%;
+  }
+
+  .contact-left h1 {
+    font-size: 31px;
+  }
+}
+
+@media (max-width: 550px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .form-group.full {
+    grid-column: auto;
+  }
+
+  .contact-right h2 {
+    font-size: 25px;
+  }
+
+  .main-info {
+    font-size: 21px;
+  }
+
+  .contact-left,
+  .contact-right {
+    padding: 35px 7%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<main class="contact-section">
+
+  <!-- 左側聯絡資訊 -->
+  <section class="contact-left">
+
+    <h1>
+      選擇你習慣的方式，<br>
+      與我們聯絡。
+    </h1>
+
+    <!-- 01 電子郵件 -->
+    <div class="contact-item">
+
+      <div class="number">01 / 電子郵件</div>
+
+      <div class="small-title">
+        歡迎來信分享你的需求
+      </div>
+
+      <a class="main-info"
+         href="mailto:b0925020523@gmail.com">
+        b0925020523@gmail.com ↗
+      </a>
+
+      <div class="description">
+        有任何問題或建議，都歡迎與我們聯繫。
+      </div>
+
+    </div>
+
+    <!-- 02 領養資訊 -->
+    <div class="contact-item">
+
+      <div class="number">02 / 寵物領養</div>
+
+      <div class="small-title">
+        找到適合自己的毛孩
+      </div>
+
+      <div class="main-info">
+        領養諮詢 ↗
+      </div>
+
+      <div class="description">
+        提供寵物品種介紹及領養相關資訊，
+        協助你找到適合的寵物夥伴。
+      </div>
+
+    </div>
+
+    <!-- 03 健康照護 -->
+    <div class="contact-item">
+
+      <div class="number">03 / 健康照護</div>
+
+      <div class="small-title">
+        一起守護毛孩的健康
+      </div>
+
+      <div class="main-info">
+        寵物照護指南 ↗
+      </div>
+
+      <div class="description">
+        提供寵物日常照顧、健康保健等相關資訊，
+        讓每一隻毛孩都能健康成長。
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- 右側聯絡表單 -->
+  <section class="contact-right">
+
+    <div class="english-title">
+      PET GUARDIAN · CONTACT US
+    </div>
+
+    <h2>留下你的寵物需求</h2>
+
+    <p class="intro">
+      填寫以下資訊，方便我們了解並回覆您的問題。<br>
+      <span class="required">*</span> 為必填欄位。
+    </p>
+
+    <!-- 已設定 Formspree 寄信網址 -->
+    <form
+      action="https://formspree.io/f/xyeeovng"
+      method="POST"
+    >
+
+      <input
+        type="hidden"
+        name="_subject"
+        value="寵物守護－網站聯絡表單"
+      >
+
+      <div class="form-grid">
+
+        <!-- 姓名 -->
+        <div class="form-group">
+
+          <label>
+            您的稱呼 <span class="required">*</span>
+          </label>
+
+          <input
+            type="text"
+            name="姓名"
+            placeholder="如何稱呼您？"
+            required
+          >
+
+        </div>
+
+        <!-- 電話 -->
+        <div class="form-group">
+
+          <label>聯絡電話</label>
+
+          <input
+            type="tel"
+            name="電話"
+            placeholder="方便聯絡的電話"
+          >
+
+        </div>
+
+        <!-- Email -->
+        <div class="form-group full">
+
+          <label>
+            電子郵件 <span class="required">*</span>
+          </label>
+
+          <input
+            type="email"
+            name="Email"
+            placeholder="you@example.com"
+            required
+          >
+
+        </div>
+
+        <!-- 服務選擇 -->
+        <div class="form-group full">
+
+          <label>想了解的服務</label>
+
+          <select name="服務類別">
+
+            <option value="寵物領養資訊">
+              寵物領養資訊
+            </option>
+
+            <option value="寵物品種介紹">
+              寵物品種介紹
+            </option>
+
+            <option value="寵物健康照護">
+              寵物健康照護
+            </option>
+
+            <option value="寵物日常照顧">
+              寵物日常照顧
+            </option>
+
+            <option value="其他問題">
+              其他問題
+            </option>
+
+          </select>
+
+        </div>
+
+        <!-- 聯絡內容 -->
+        <div class="form-group full">
+
+          <label>
+            需求說明 <span class="required">*</span>
+          </label>
+
+          <textarea
+            name="聯絡內容"
+            placeholder="請簡單說明您的問題或想了解的內容..."
+            required
+          ></textarea>
+
+        </div>
+
+      </div>
+
+      <!-- 資料使用同意 -->
+      <label class="agreement">
+
+        <input
+          type="checkbox"
+          name="資料使用同意"
+          value="同意"
+          required
+        >
+
+        <span>
+          我同意提供上述資料供寵物守護本次諮詢聯繫使用，
+          並了解相關資料將用於回覆本次詢問。
+        </span>
+
+      </label>
+
+      <!-- 送出按鈕 -->
+      <button type="submit" class="submit-btn">
+        送出訊息 →
+      </button>
+
+    </form>
+
+  </section>
+
+</main>
+
+</body>
+</html>
